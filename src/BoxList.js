@@ -20,7 +20,7 @@ function BoxList() {
     <div>
       <BoxForm addBox={addBox} />
 
-      <div>
+      <div data-testid="box-container">
         {boxes.map(box =>
           <Box
             key={ box.id}

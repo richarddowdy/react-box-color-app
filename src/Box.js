@@ -6,9 +6,9 @@ function Box({ height, width, color, remove, id }){
   };
 
   return (
-    <div >
-      <div style={{ height:`${height}px` , width:`${width}px`, backgroundColor: color }}></div>
-      <button onClick={ handleRemove }>X</button>
+    <div data-testid="box" onClick={handleRemove}>
+      <div style={{ height: `${height}px`, width: `${width}px`, backgroundColor: color }}></div>
+      {/* <button onClick={ handleRemove }>X</button> */}
     </div>
   )
 }
